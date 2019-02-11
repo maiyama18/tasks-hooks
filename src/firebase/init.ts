@@ -14,8 +14,8 @@ firebase.initializeApp(config);
 
 const firestore = firebase.firestore();
 
-const provider = new firebase.auth.GoogleAuthProvider();
 const loginWithGoogle = () => {
+  const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithRedirect(provider);
 };
 const logoutFromGoogle = () => {
